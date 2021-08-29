@@ -1,0 +1,229 @@
+.t-message {
+  bottom: 0;
+  margin: auto;
+  width: 100vw;
+  position: fixed;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  left: 0;
+  right: 0;
+}
+
+.t-message-body {
+  margin: 20px auto;
+  text-align: center;
+  color: #f3f3f3;
+  background-color: #4f5b56;
+  max-width: 600px;
+  min-width: 150px;
+  padding-left: 10px;
+  padding-right: 10px;
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  padding: 5px;
+  border-radius: 5px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.t-message-body h4 {
+  margin: auto;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+@keyframes slide-up-anim {
+  0% {
+    transform: translateY(100px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.slide-up {
+  animation-timing-function: ease;
+  animation-iteration-count: 1;
+  animation: slide-up-anim 0.5s;
+}
+
+@keyframes slide-out-anim {
+  0% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  70% {
+    opacity: 0.01;
+  }
+  100% {
+    transform: translateY(100px);
+    opacity: 0;
+  }
+}
+
+.slide-out {
+  animation-timing-function: ease;
+  animation-iteration-count: 1;
+  animation: slide-out-anim 0.5s;
+}
+
+.loader-t-message {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.loader-t-message-body {
+  height: 60px;
+  width: 100px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  align-self: center;
+  display: flex;
+  background-color: #f50119;
+  z-index: 7;
+}
+
+.loader-t-message-body .loader {
+  width: 30px;
+  height: 30px;
+}
+
+.loader-t-message-body .loader span {
+  width: 30px;
+  height: 30px;
+}
+
+.loader-t-message-body .loader span::before {
+  width: 30px;
+  height: 30px;
+  border: 2px solid #fff;
+  border-bottom: 2px solid transparent;
+}
+
+.loader-t-message-body .loader span::after {
+  background: #fff;
+  border-radius: 50%;
+}
+.loader-body {
+  height: 100%;
+  width: 100%;
+  animation: fade-in 0.5s ease-in;
+  display: flex;
+  justify-content: center;
+}
+*,
+::after,
+::before {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.loader {
+  display: flex;
+  height: 30px;
+  width: 30px;
+  align-self: center;
+}
+.loader span {
+  display: block;
+  height: 30px;
+  width: 30px;
+}
+.loader span::before {
+  content: "";
+  display: block;
+  height: 30px;
+  width: 30px;
+  border: 2px solid #f50119;
+  border-bottom: 3px solid transparent;
+  border-radius: 50%;
+  -webkit-animation: loader-1 1.5s cubic-bezier(0.77, 0, 0.175, 1) infinite;
+  animation: loader-1 1.5s cubic-bezier(0.77, 0, 0.175, 1) infinite;
+}
+@-webkit-keyframes loader-1 {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  40% {
+    -webkit-transform: rotate(180deg);
+  }
+  60% {
+    -webkit-transform: rotate(180deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+@keyframes loader-1 {
+  0% {
+    transform: rotate(0deg);
+  }
+  40% {
+    transform: rotate(180deg);
+  }
+  60% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.loader span::after {
+  content: "";
+  display: flex;
+  align-self: center;
+  margin: auto;
+  margin-top: -20px;
+  width: 7px;
+  height: 7px;
+  background: #f50119;
+  border-radius: 50%;
+  -webkit-animation: loader-2 1.5s cubic-bezier(0.77, 0, 0.175, 1) infinite;
+  animation: loader-2 1.5s cubic-bezier(0.77, 0, 0.175, 1) infinite;
+}
+@-webkit-keyframes loader-2 {
+  0% {
+    -webkit-transform: translate3d(0, -30px, 0) scale(0, 2);
+    opacity: 0;
+  }
+  50% {
+    -webkit-transform: translate3d(0, 0, 0) scale(1.25, 1.25);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: translate3d(0, 8px, 0) scale(0, 0);
+    opacity: 0;
+  }
+}
+@keyframes loader-2 {
+  0% {
+    transform: translate3d(0, -30px, 0) scale(0, 2);
+    opacity: 0;
+  }
+  50% {
+    transform: translate3d(0, 0, 0) scale(1.25, 1.25);
+    opacity: 1;
+  }
+  100% {
+    transform: translate3d(0, 8px, 0) scale(0, 0);
+    opacity: 0;
+  }
+}
+.l-anim {
+  width: 40vw;
+  align-self: center;
+  margin: auto;
+  margin-top: 15vh;
+  min-width: 400px;
+  animation: fade-in 0.3s;
+}
+  

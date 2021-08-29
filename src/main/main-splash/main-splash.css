@@ -1,0 +1,24 @@
+.splash-body {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+}
+#exit.splash-body {
+  animation: fade-out 1s ease-out both;
+}
+
+.splash-body .splash-anim {
+  margin-top: -150px;
+  height: 300px;
+  align-self: center;
+}
+
+@keyframes fade-out {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
