@@ -94,7 +94,8 @@
 .p-input p {
   align-self: flex-start;
 }
-.p-input input {
+.p-input input,
+.p-input textarea {
   background-color: #ececec;
   color: rgb(70, 70, 70);
   border: 1px solid #b1b1b1;
@@ -102,6 +103,7 @@
   padding-left: 10px;
   margin-top: 5px;
   border-radius: 5px;
+  margin-bottom: 5px;
 }
 .p-input input::placeholder {
   color: #707070;
@@ -133,21 +135,6 @@
   color: #fff;
 }
 
-.p-btn:hover {
-  flex: 1.1;
-  background-color: #04a32c3d;
-  border: #04a32c 1px solid;
-}
-.p-btn:hover p {
-  color: #04a32c;
-}
-#left.p-btn:hover {
-  border: #ff0000 1px solid;
-  background-color: #ff00003d;
-}
-#left.p-btn:hover p {
-  color: #ff0000;
-}
 
 .p-btn:active {
   flex: 0.85;

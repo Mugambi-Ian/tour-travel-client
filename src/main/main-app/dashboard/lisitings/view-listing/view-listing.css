@@ -1,0 +1,274 @@
+.el-body {
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: rgba(71, 71, 71, 0.322);
+  animation: fade-in 0.5s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  z-index: 10;
+}
+
+.el-form {
+  width: 90vw;
+  height: 75vh;
+  max-width: 650px;
+  background-color: #fff;
+  border-radius: 5px;
+  align-self: center;
+  transition: all 0.3s;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  width: 90vw;
+  height: 90vh;
+  max-width: none;
+}
+.el-form .el-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  animation: fade-in 0.5s;
+}
+.el-close-btn {
+  align-self: flex-end;
+  height: 40px;
+  width: 40px;
+  transition: all 0.3s;
+  z-index: 10;
+}
+
+.el-close-btn:active {
+  width: 50px;
+  height: 50px;
+  margin: -5px;
+}
+.el-proceed-btn {
+  margin: 0;
+  background-color: rgb(13, 146, 53);
+  color: #fff;
+  padding: 5px;
+  padding-bottom: 20px;
+  width: 150px;
+  text-align: center;
+}
+.el-form h1 {
+  margin: 0;
+  margin-bottom: 20px;
+}
+.el-form p {
+  margin: 0;
+  margin-bottom: 10px;
+}
+.el-form .p-input {
+  margin: 5px;
+  width: 98%;
+}
+.el-pricing-list {
+  max-height: 80vh;
+  flex: 1;
+  overflow-y: auto;
+  margin-bottom: 10px;
+}
+.price-card {
+  display: flex;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+  padding: 5px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 5px;
+  margin: 5px;
+}
+.price-card p {
+  flex: 1;
+  align-self: center;
+  text-align: center;
+}
+.price-card img {
+  width: 30px;
+  height: 30px;
+}
+.el-pricing {
+  display: flex;
+  max-height: 100px;
+  max-width: 100%;
+}
+.el-pricing img {
+  height: 45px;
+  width: 45px;
+  align-self: center;
+  margin: 5px auto;
+}
+.price-card img,
+.el-pricing img {
+  transition: all 0.3s;
+}
+.price-card img:active,
+.el-pricing img:active {
+  transform: scale(1.2);
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.el-overview {
+  display: flex;
+  flex: 1;
+}
+.el-overview .lo-nav {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+}
+.lo-nav img {
+  width: 275px;
+  object-fit: contain;
+  margin-bottom: 20px;
+  animation: skeleton-loading 1s linear infinite alternate;
+  min-width: 150px;
+}
+.lo-nav p {
+  width: 90%;
+  background-color: rgb(231, 231, 231);
+  padding: 10px;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+  border-radius: 5px;
+  transition: all 0.2s;
+}
+.lo-nav p:active {
+  width: 75%;
+  background-color: #0d6163;
+  color: #fff;
+}
+.lo-nav p.on:active {
+  width: 90%;
+}
+.lo-nav p.on {
+  background-color: #0d6163;
+  color: #fff;
+}
+.lo-content {
+  flex: 1;
+  max-height: 75vh;
+  display: flex;
+  overflow-y: auto;
+  margin-right: 10px;
+}
+.lo-content .overview.s1 {
+  animation: fade-in 0.3s;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  max-height: 70vh;
+}
+.lo-content .overview {
+  animation: fade-in 0.4s;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.lo-content .lo-description p {
+  font-weight: 300;
+}
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-top: 20px;
+}
+.gallery__img {
+  width: 100%;
+  object-fit: contain;
+  margin: 0;
+  animation: skeleton-loading 1s linear infinite alternate;
+}
+
+.qty-div {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+  margin-right: 20px;
+}
+.qty-div p {
+  align-self: flex-end;
+  color: #b3b3b3;
+  margin-right: 20px;
+  animation: fade-in 1s;
+}
+.qty-crtl {
+  margin-top: 5px;
+  display: flex;
+  margin-bottom: 10px;
+  align-self: center;
+  margin-left: 20px;
+}
+.qty-crtl input {
+  max-width: 100px;
+  text-align: center;
+  margin-right: 10px;
+  margin-left: 10px;
+  background-color: #727272;
+  color: #fff;
+  border: none;
+  animation: fade-in 1s;
+  border-radius: 5px;
+}
+
+.qty-crtl p,
+.el-body .p-btn {
+  margin: 0;
+  height: 40px;
+  width: 40px;
+  text-align: center;
+  padding-top: 2px;
+  box-shadow: rgba(50, 50, 93, 0.95) 0px 50px 100px -20px,
+    rgb(0, 0, 0) 0px 30px 60px -30px;
+  transition: all 0.2s;
+  border: rgb(224, 224, 224) 1px solid;
+  animation: fade-in-top 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  font-size: 1.5rem;
+  transition: all 0.2s;
+}
+.el-body .p-btn {
+  width: 150px;
+  font-size: 1rem;
+  height: min-content;
+  padding: 10px;
+  background-color: #0d6163;
+  color: #fff;
+  align-self: flex-end;
+  margin-top: 10px;
+}
+.qty-crtl p:active {
+  height: 35px;
+  width: 35px;
+}
+.el-body .p-btn:active {
+  width: 100px;
+  height: min-content;
+  flex: 0;
+}
+.time {
+  flex: 1;
+  max-width: 300px;
+  margin: 10px;
+}
+
+.when-div {
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+}

@@ -43,3 +43,16 @@ export function validateEmail(mail) {
   }
   return false;
 }
+export const formatDate = (x) => {
+  console.log(x);
+  function join(t, a, s) {
+    function format(m) {
+      let f = new Intl.DateTimeFormat("en", m);
+      return f.format(t);
+    }
+    return a.map(format).join(s);
+  }
+
+  let a = [{ day: "numeric" }, { month: "value" }, { year: "numeric" }];
+  return join(x, a, "-");
+};

@@ -19,3 +19,17 @@
   display: flex;
   font-family: "Lexend", sans-serif;
 }
+
+::-webkit-scrollbar {
+  width: 0.1rem;
+  padding-right: 20px;
+}
+::-webkit-scrollbar-track {
+  background: #fff;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #c2eaec;
+  border-radius: 10px;
+}
+  

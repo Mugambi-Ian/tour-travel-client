@@ -1,0 +1,69 @@
+.booking-body {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  animation: fade-in 0.3s;
+  min-width: 100vw;
+  height: 100vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+  position: fixed;
+  margin: 0;
+  left: 0;
+  top: 0;
+  right: 0;
+  padding-top: 80px;
+}
+.book-card {
+  width: 100%;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  margin: 10px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+.book-card h1,
+.book-card h4,
+.book-card h5,
+.book-card p {
+  margin: 0;
+}
+.book-card h1 {
+  margin: 5px;
+}
+.book-card .customer {
+  flex: 1;
+  max-width: 90vw;
+  display: flex;
+  flex-direction: row-reverse;
+  margin-bottom: 20px;
+}
+.book-card img{
+  width: 60px;
+  height: 60px;
+  border-radius: 20px;
+}
+.customer h4 {
+  flex: 1;
+  text-align: end;
+  align-self: flex-end;
+}
+.book-card .info {
+  display: flex;
+  margin: 5px;
+  flex: 1;
+  max-width: 95vw;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  padding: 5px;
+  background-color: rgb(87, 87, 87);
+  color: #fff;
+  padding-right: 10px;
+  padding-left: 10px;
+  border-radius: 5px;
+}
+.info p {
+  flex: 1;
+}
+.book-card .info:last-of-type {
+  margin-bottom: 20px;
+}

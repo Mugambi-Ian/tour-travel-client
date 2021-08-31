@@ -1,0 +1,147 @@
+.listing-body {
+  width: 100vw;
+  height: 100%;
+  display: flex;
+}
+
+.no-listings {
+  justify-content: center;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  flex-direction: column;
+}
+
+.no-listings #animation {
+  height: 350px;
+  margin-top: 100px;
+}
+
+.no-listings #down-anim {
+  position: fixed;
+  bottom: 10px;
+  right: 70px;
+  width: 140px;
+  height: 140px;
+}
+.no-listings p {
+  margin: 0;
+  align-self: center;
+  flex: 1;
+  text-align: center;
+  padding: 0;
+  font-size: 1.5rem;
+  font-weight: 400;
+  text-overflow: ellipsis;
+  width: max-content;
+}
+
+.listing-button {
+  background-color: #009e7e;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 300px;
+  display: flex;
+  align-self: center;
+  justify-content: center;
+  padding: 10px;
+  transition: all 0.3s;
+}
+
+.listing-button p {
+  color: rgb(255, 255, 255);
+  margin: 0;
+}
+
+.listing-button:active {
+  background-color: #f7be31;
+  animation: shadow-drop-2-center 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+ol.lisitings-list {
+  min-width: 100vw;
+  max-height: calc(100vh);
+  overflow-y: auto;
+  animation: fade-in-top 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  margin: 0;
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  padding-top: 80px;
+  margin-block: 0;
+  padding-inline: 0;
+  padding-right: 20px;
+  padding-left: 20px;
+  display: grid;
+  gap: 0;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 2fr));overflow-x: hidden;
+  
+}
+li.lisiting-card {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+  background-color: #f7f7f7;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  border-radius: 5px;
+  transition: all 0.3s;
+  max-width: 350px;
+}
+
+.lisiting-card img {
+  border-radius: 10px;
+  margin-top: 10px;
+  width: 300px;
+  height:300px;
+  object-fit: contain;
+  align-self: center;
+  animation: skeleton-loading 1s linear infinite alternate;
+}
+
+.lisiting-card p {
+  margin: 5px;
+  color: #727272;
+
+}
+.lisiting-card h2.title {
+  font-weight: 600;
+  font-size: 1.3rem;
+  color: #555555;
+ margin: auto;
+  margin-top: 20px;
+  height: max-content;
+}
+
+.lisiting-card .info {
+  flex: 1;
+  max-width: 300px;
+  align-self: center;
+}
+.lisiting-card .btn {
+  margin-top: 15px;
+  background-color: #ffffff;
+  align-self: center;
+  padding: 5px;
+  color: #727272;
+  text-align: center;
+  box-shadow: rgba(50, 50, 93, 0.95) 0px 50px 100px -20px,
+    rgb(0, 0, 0) 0px 30px 60px -30px;
+  margin-bottom: 10px;
+  width: 90%;
+  border-radius: 5px;
+  transition: all 0.2s;
+  border: rgb(224, 224, 224) 1px solid;
+  animation: fade-in-top 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+}
+.lisiting-card #on.btn {
+  background-color: #f50119;
+  color: #ffffff;
+}
+.lisiting-card .btn:active {
+  width: 80%;
+}
+  
